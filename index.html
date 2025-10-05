@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三目並べ (Tic-Tac-Toe)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>三目並べ</h1>
+    <div id="difficulty-selection">
+        <h2>難易度を選択してください</h2>
+        <button id="easy-btn" data-difficulty="easy">梅 (Easy)</button>
+        <button id="normal-btn" data-difficulty="normal">竹 (Normal)</button>
+        <button id="hard-btn" data-difficulty="hard">松 (Hard)</button>
+    </div>
+    <div id="game-container" class="hidden">
+        <div id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div id="status-container">
+            <p id="status">Xのターン</p>
+            <div id="game-over-message" class="hidden">
+                <h2>GAME OVER</h2>
+                <p id="winner-message"></p>
+            </div>
+        </div>
+        <button id="reset-button">リセット</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
